@@ -13,7 +13,7 @@ function EmployeeList({ employees }) {
             <th>Role</th>
         </tr>
         {employees.map((employee) => (
-            <Employee firstName={employee.firstName} lastName={employee.lastName} role={employee.role}/>
+            <Employee key={employee.id} firstName={employee.firstName} lastName={employee.lastName} role={employee.role}/>
         ))}
       </table>
     </div>
